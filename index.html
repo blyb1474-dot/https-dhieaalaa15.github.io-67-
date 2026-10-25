@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORA PS4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #080711;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            background: rgba(20, 16, 38, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            width: 100%;
+            max-width: 450px;
+            padding: 35px 20px;
+            border-radius: 24px;
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+        }
+        /* تصميم الصورة الشخصية */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #a855f7;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.6), 0 0 10px rgba(168, 85, 247, 0.8);
+            margin-bottom: 20px;
+        }
+        /* العنوان الرئيسي */
+        h1 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #38bdf8, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+        /* النص الوصفي */
+        p {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+        /* صندوق العداد */
+        .counter-box {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 15px 0;
+            background: rgba(10, 10, 25, 0.7);
+            border-radius: 16px;
+            padding: 15px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+        }
+        /* الزر التفاعلي */
+        .btn {
+            background: linear-gradient(135deg, #38bdf8, #a855f7);
+            color: #ffffff;
+            border: none;
+            padding: 16px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
+            width: 100%;
+            margin-top: 10px;
+        }
+        .btn:active {
+            transform: scale(0.96);
+        }
+        .btn:hover {
+            opacity: 0.95;
+            box-shadow: 0 6px 25px rgba(56, 189, 248, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- الصورة الصغيرة للمشروع -->
+        <img src="logo.jpg" alt="NEXORA PS4" class="profile-img">
+
+        <!-- العنوان الرئيسي -->
+        <h1>موقع تعديل من 5.05 إلى 13.52</h1>
+        
+        <p>NEXORA PS4 Jailbreak & Exploits</p>
+        
+        <!-- العداد التفاعلي -->
+        <div class="counter-box" id="counter">0</div>
+        
+        <!-- زر التفاعل -->
+        <button class="btn" onclick="increment()">تفعيل / اضغط هنا 🚀</button>
+    </div>
+
+    <script>
+        let count = 0;
+        function increment() {
+            count++;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+
+</body>
+</html>
